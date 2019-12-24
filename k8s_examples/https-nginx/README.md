@@ -2,7 +2,7 @@
 
 _You need to ensure the key and cert are created in advance_
 
-kubectl create secret tls nginxsecret --key nginx.key --cert nginx.crt
+kubectl create secret tls nginxsecret --key certs/nginx.key --cert certs/nginx.crt
 
 kubectl create configmap nginxconfigmap --from-file=default.conf
 
