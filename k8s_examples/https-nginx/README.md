@@ -1,5 +1,7 @@
 * Simple setup to create a NGINX server with certs 
 
+_You need to ensure the key and cert are created in advance_
+
 kubectl create secret tls nginxsecret --key nginx.key --cert nginx.crt
 
 kubectl create configmap nginxconfigmap --from-file=default.conf
